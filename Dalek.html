@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Dalek</title>
+    <link rel="shortcut icon" href="https://icon-library.com/images/cyberman-icon/cyberman-icon-6.jpg">
+    <style>
+        body { 
+            margin: 0; 
+
+        } 
+        canvas {
+            display: block;
+        }
+        div {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: left;
+            z-index: 100;
+            display:block;
+            color:rgb(102, 255, 0);
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" charset="UTF-8" src="lib/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="lib/three.module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="lib/OrbitControls.js"></script>
+    <script type="text/javascript" src="./Dalek.js"></script>
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <div id="info">CONTROLES:<br>
+        +Walk: W (forward), S (backward)<br>
+        +Rotate: A (left), D (right)<br>
+        +Rotate head: Q (left), E (right)<br>
+        +Camera rotation: left click + mouse movement <br>
+        +Camera movement: right click + mouse movement<br>
+        +Camera zoom: mouse roulette <br>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            init();
+            animate();
+        })();
+    </script>
+</body>
+
+</html>
